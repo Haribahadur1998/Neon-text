@@ -82,7 +82,7 @@ button:hover {
 /* for box2 and its components*/
 
 .box2 {
-  background: url("images/wall.jpg.jpg");
+  background: url("images/wall.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
