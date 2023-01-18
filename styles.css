@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&family=Pacifico&family=Sacramento&family=Satisfy&display=swap");
+
+/*
+font-family: 'Great Vibes', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Satisfy', cursive;
+*/
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading:hover {
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/*for box1 and its components*/
+
+.box1 {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box1input {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 50px;
+  width: 80%;
+  text-align: center;
+  background-color: #fff;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus {
+  background-color: black;
+  color: #fff;
+}
+
+.box1buttons {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+button {
+  margin: 0px 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ff4da6;
+  color: #fff;
+}
+
+button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+/* for box2 and its components*/
+
+.box2 {
+  background: url("images/wall.jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#changedText {
+  text-align: center;
+}
+
+/* additional css button click function*/
+
+.type1 {
+  font-family: "Pacifico", cursive;
+  font-size: 60px;
+
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.type2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+
+  /*Sorry I copied below animation for glow text*/
+
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.type3 {
+  font-family: "Sacramento", cursive;
+  font-size: 70px;
+
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.type4 {
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+
+  color: #fff;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 600px) {
+  .heading {
+    margin-top: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .box1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1input {
+    margin: 50px 0px;
+    display: flex;
+    width: 80vw;
+  }
+
+  #myInput {
+    font-size: 18px;
+  }
+
+  .box1buttons {
+    margin: 50px 0px;
+    width: 90vw;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .box2 {
+    width: 100vw;
+    height: 50vh;
+  }
+}
